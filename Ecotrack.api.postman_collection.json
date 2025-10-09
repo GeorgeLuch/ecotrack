@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "5e3601d3-16e4-4e69-9e3b-d51d78ba5439",
+		"name": "Ecotrack.api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15827745",
+		"_collection_link": "https://winter-sunset-317855.postman.co/workspace/Projeto-nelio-alves~5ee105a6-e29d-4ac3-8365-f732e253ae2b/collection/15827745-5e3601d3-16e4-4e69-9e3b-d51d78ba5439?action=share&source=collection_link&creator=15827745"
+	},
+	"item": [
+		{
+			"name": "Resistrar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"tipo\": \"ISO 14001\",\r\n  \"data\": \"2025-06-16T00:00:00\",\r\n  \"responsavel\": \"Maria\",\r\n  \"resultado\": \"Aprovada\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/compliance/registrar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"compliance",
+						"registrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "monitorar",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"data\": \"2025-06-16T22:49:21.452Z\",\r\n  \"fonte\": \"string\",\r\n  \"quantidade\": 0,\r\n  \"unidade\": \"string\",\r\n  \"local\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/emissoes/monitorar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"emissoes",
+						"monitorar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validade",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"string\",\r\n  \"orgaoEmissor\": \"string\",\r\n  \"validade\": \"2025-06-16T22:51:04.222Z\",\r\n  \"unidade\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/licensas/validade",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"licensas",
+						"validade"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,177 @@
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\EcoTrack.api.staticwebassets.endpoints.json
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\appsettings.json
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\EcoTrack.api.exe
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\EcoTrack.api.deps.json
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\EcoTrack.api.runtimeconfig.json
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\EcoTrack.api.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\EcoTrack.api.pdb
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.Formats.Asn1.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\EcoTrack.api.csproj.AssemblyReference.cache
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\EcoTrack.api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\EcoTrack.api.AssemblyInfoInputs.cache
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\EcoTrack.api.AssemblyInfo.cs
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\EcoTrack.api.csproj.CoreCompileInputs.cache
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\EcoTrack.api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\EcoTrack.api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\scopedcss\bundle\EcoTrack.api.styles.css
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\EcoTrack.DE6FA85C.Up2Date
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\EcoTrack.api.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\refint\EcoTrack.api.dll
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\EcoTrack.api.pdb
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\EcoTrack.api.genruntimeconfig.cache
+C:\Users\gico_\Downloads\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\ref\EcoTrack.api.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\appsettings.Development.json
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\appsettings.json
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\EcoTrack.api.staticwebassets.endpoints.json
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\EcoTrack.api.exe
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\EcoTrack.api.deps.json
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\EcoTrack.api.runtimeconfig.json
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\EcoTrack.api.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\EcoTrack.api.pdb
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Azure.Core.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Azure.Identity.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.ClientModel.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.Formats.Asn1.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.IO.Pipelines.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.Memory.Data.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.Text.Json.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\EcoTrack.api.csproj.AssemblyReference.cache
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\EcoTrack.api.GeneratedMSBuildEditorConfig.editorconfig
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\EcoTrack.api.AssemblyInfoInputs.cache
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\EcoTrack.api.AssemblyInfo.cs
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\EcoTrack.api.csproj.CoreCompileInputs.cache
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\EcoTrack.api.MvcApplicationPartsAssemblyInfo.cs
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\EcoTrack.api.MvcApplicationPartsAssemblyInfo.cache
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\scopedcss\bundle\EcoTrack.api.styles.css
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\staticwebassets.build.json
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\staticwebassets.development.json
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\EcoTrack.DE6FA85C.Up2Date
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\EcoTrack.api.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\refint\EcoTrack.api.dll
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\EcoTrack.api.pdb
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\EcoTrack.api.genruntimeconfig.cache
+D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\EcoTrack.api\obj\Debug\net8.0\ref\EcoTrack.api.dll

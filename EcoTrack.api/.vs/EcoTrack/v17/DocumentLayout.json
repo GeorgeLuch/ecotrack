@@ -1,0 +1,107 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gico_\\Downloads\\EcoTrack.api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2F5444B1-43D6-42A7-913C-297065F8AD59}|EcoTrack.api\\EcoTrack.api.csproj|c:\\users\\gico_\\downloads\\ecotrack.api\\ecotrack.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F5444B1-43D6-42A7-913C-297065F8AD59}|EcoTrack.api\\EcoTrack.api.csproj|solutionrelative:ecotrack.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F5444B1-43D6-42A7-913C-297065F8AD59}|EcoTrack.api\\EcoTrack.api.csproj|c:\\users\\gico_\\downloads\\ecotrack.api\\ecotrack.api\\models\\norma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F5444B1-43D6-42A7-913C-297065F8AD59}|EcoTrack.api\\EcoTrack.api.csproj|solutionrelative:ecotrack.api\\models\\norma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F5444B1-43D6-42A7-913C-297065F8AD59}|EcoTrack.api\\EcoTrack.api.csproj|c:\\users\\gico_\\downloads\\ecotrack.api\\ecotrack.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2F5444B1-43D6-42A7-913C-297065F8AD59}|EcoTrack.api\\EcoTrack.api.csproj|solutionrelative:ecotrack.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F5444B1-43D6-42A7-913C-297065F8AD59}|EcoTrack.api\\EcoTrack.api.csproj|c:\\users\\gico_\\downloads\\ecotrack.api\\ecotrack.api\\controllers\\compliancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F5444B1-43D6-42A7-913C-297065F8AD59}|EcoTrack.api\\EcoTrack.api.csproj|solutionrelative:ecotrack.api\\controllers\\compliancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Norma.cs",
+              "DocumentMoniker": "C:\\Users\\gico_\\Downloads\\EcoTrack.api\\EcoTrack.api\\Models\\Norma.cs",
+              "RelativeDocumentMoniker": "EcoTrack.api\\Models\\Norma.cs",
+              "ToolTip": "C:\\Users\\gico_\\Downloads\\EcoTrack.api\\EcoTrack.api\\Models\\Norma.cs",
+              "RelativeToolTip": "EcoTrack.api\\Models\\Norma.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T01:57:50.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAANkTAAAAAAAAAAAuwOUTAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-06-16T01:15:53.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\gico_\\Downloads\\EcoTrack.api\\EcoTrack.api\\appsettings.json",
+              "RelativeDocumentMoniker": "EcoTrack.api\\appsettings.json",
+              "ToolTip": "C:\\Users\\gico_\\Downloads\\EcoTrack.api\\EcoTrack.api\\appsettings.json",
+              "RelativeToolTip": "EcoTrack.api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-15T18:57:25.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gico_\\Downloads\\EcoTrack.api\\EcoTrack.api\\Program.cs",
+              "RelativeDocumentMoniker": "EcoTrack.api\\Program.cs",
+              "ToolTip": "C:\\Users\\gico_\\Downloads\\EcoTrack.api\\EcoTrack.api\\Program.cs",
+              "RelativeToolTip": "EcoTrack.api\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T18:53:40.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ComplianceController.cs",
+              "DocumentMoniker": "C:\\Users\\gico_\\Downloads\\EcoTrack.api\\EcoTrack.api\\Controllers\\ComplianceController.cs",
+              "RelativeDocumentMoniker": "EcoTrack.api\\Controllers\\ComplianceController.cs",
+              "ToolTip": "C:\\Users\\gico_\\Downloads\\EcoTrack.api\\EcoTrack.api\\Controllers\\ComplianceController.cs",
+              "RelativeToolTip": "EcoTrack.api\\Controllers\\ComplianceController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T18:42:38.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+
+===============================
+EcoTrack - Instruções Gerais
+===============================
+
+Este documento contém tudo que precisa para rodar o projeto EcoTrack corretamente, usando Docker.
+
+-------------------------------
+O que precisa estar instalado
+-------------------------------
+
+1. Docker Desktop (obrigatório)
+   Baixar: https://www.docker.com/products/docker-desktop
+
+   - Durante a instalação, habilite:
+     - ✔️ WSL 2
+     - ✔️ Containers Linux
+
+2. WSL 2 (se não instalado com Docker)
+   Guia: https://learn.microsoft.com/windows/wsl/install
+
+-------------------------------
+
+
+
+- SQLCMD (linha de comando)
+  Instalar com:
+  > winget install Microsoft.SQLCMD
+
+- .NET 8 SDK (caso queira rodar sem Docker)
+  https://dotnet.microsoft.com/en-us/download/dotnet/8.0
+
+-------------------------------
+Como rodar o projeto
+-------------------------------
+
+1. Faça o download do projeto (ou extraia o .zip fornecido)
+2. Abra um terminal dentro da pasta do projeto (onde está o arquivo docker-compose.yml)
+3. Execute:
+
+   docker compose up --build
+
+4. Aguarde a inicialização dos containers
+5. Acesse no navegador:
+
+   http://localhost:5000/swagger
+
+-------------------------------
+Dados de acesso ao SQL Server
+-------------------------------
+
+- Servidor: localhost,1433
+- Usuário: sa
+- Senha: YourStrong!Passw0rd
+- Banco: EcoTrack
+
+-------------------------------
+📁 Estrutura esperada do projeto
+-------------------------------
+
+EcoTrack/
+├── docker-compose.yml
+├── README.md
+├── EcoTrack.api/
+│   ├── Dockerfile
+│   ├── EcoTrack.api.csproj
+│   ├── Program.cs
+│   ├── appsettings.json
+│   ├── Controllers/
+│   ├── Models/
+│   └── Services/
+
+-------------------------------
+
+
+
+- O banco é criado automaticamente ao iniciar (EnsureCreated)
+- A API já está configurada com endpoints prontos para teste via Swagger
+- Nenhum dado é persistido após parar os containers, pois não há volume (ideal apenas para testes acadêmicos)
+- Tudo funciona via Docker, sem necessidade de Visual Studio ou .NET instalado
+

@@ -1,0 +1,29 @@
+
+services:
+  api:
+    build:
+      context: ./EcoTrack.api
+      dockerfile: Dockerfile
+    ports:
+      - "5000:8080"
+    depends_on:
+      - sqlserver
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    networks:
+      - ecotrack-network
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=YourStrong!Passw0rd
+    networks:
+      - ecotrack-network
+
+networks:
+  ecotrack-network:
+    driver: bridge

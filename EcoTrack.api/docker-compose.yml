@@ -1,8 +1,7 @@
-
 services:
   api:
     build:
-      context: ./EcoTrack.api
+      context: ./EcoTrack.api/EcoTrack.api   # <-- pasta onde estão Dockerfile + .csproj
       dockerfile: Dockerfile
     ports:
       - "5000:8080"
@@ -10,6 +9,7 @@ services:
       - sqlserver
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=sqlserver,1433;Database=EcoTrack;User Id=sa;Password=YourStrong!Passw0rd;Encrypt=False;TrustServerCertificate=True;
     networks:
       - ecotrack-network
 

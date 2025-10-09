@@ -1,0 +1,26 @@
+# === .dockerignore for EcoTrack.api (API folder) ===
+# .NET build artifacts
+bin/
+obj/
+*.user
+*.suo
+
+# IDE files
+.vs/
+.vscode/
+
+# Test outputs
+TestResults/
+*.trx
+
+# Logs
+*.log
+
+# Git metadata (not needed in Docker context)
+.git
+.gitignore
+
+# Misc
+*.swp
+*.tmp
+Thumbs.db

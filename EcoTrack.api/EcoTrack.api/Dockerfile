@@ -4,17 +4,21 @@ WORKDIR /app
 EXPOSE 8080
 ENV ASPNETCORE_URLS=http://+:8080
 
-# Build/Publish
+# Build / Publish
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
-# Restaura com cache
-COPY EcoTrack.api.csproj .
+# Copia todo o projeto primeiro (garante que restore veja tudo o que precisa)
+COPY . .
+
+# (higiene) garante que não há lixo local de bin/obj vindo do host
+RUN rm -rf ./bin ./obj || true
+
+# Restore completo já com todos os arquivos presentes
 RUN dotnet restore EcoTrack.api.csproj
 
-# Copia o restante e publica (publish já compila)
-COPY . .
+# Publish (já compila), sem restaurar de novo
 RUN dotnet publish EcoTrack.api.csproj -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false --no-restore
 
 # Final

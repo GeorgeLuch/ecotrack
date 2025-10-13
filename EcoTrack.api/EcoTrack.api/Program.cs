@@ -1,8 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Data.SqlClient;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Adiciona o contexto do banco de dados usando SQL Server
+// DbContext (SQL Server)
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -10,18 +11,25 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Injeção de dependência dos serviços
+// DI dos serviços
 builder.Services.AddScoped<ComplianceService>();
 builder.Services.AddScoped<EmissoesService>();
 builder.Services.AddScoped<LicencasService>();
 
 var app = builder.Build();
 
-// 🔽 Adiciona esta parte para garantir que o banco seja criado
+// Garante criação do banco na 1ª execução, sem falhar se já existir
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    db.Database.EnsureCreated();
+    try
+    {
+        db.Database.EnsureCreated();
+    }
+    catch (SqlException ex) when (ex.Number == 1801) // Database already exists
+    {
+        // Ignora: banco já existe
+    }
 }
 
 if (app.Environment.IsDevelopment())
@@ -30,7 +38,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// Obs: em container servindo só http/8080, este middleware pode logar um WARN.
+// Se quiser, comente a linha abaixo para não ver o aviso.
 app.UseHttpsRedirection();
+
 app.UseAuthorization();
 app.MapControllers();
 

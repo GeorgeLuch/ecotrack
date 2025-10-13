@@ -1,0 +1,69 @@
+name: Deploy (self-hosted → GHCR image)
+
+on:
+  push:
+    branches: [ "main" ]          # staging
+  create:
+    tags:
+      - 'v*'                       # prod por tag (v1.0.0 etc.)
+  workflow_dispatch:
+
+env:
+  IMAGE_NAME: ghcr.io/georgeluch/ecotrack
+  DEPLOY_DIR: 'D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api'
+
+jobs:
+  deploy-staging:
+    if: github.ref == 'refs/heads/main'
+    runs-on: self-hosted
+    steps:
+      - name: Docker login to GHCR (if secrets provided)
+        if: ${{ secrets.GHCR_PAT != '' }}
+        shell: cmd
+        run: |
+          echo %GHCR_PAT% | docker login ghcr.io -u %GHCR_USERNAME% --password-stdin
+        env:
+          GHCR_USERNAME: ${{ secrets.GHCR_USERNAME }}
+          GHCR_PAT: ${{ secrets.GHCR_PAT }}
+
+      - name: Pull latest image and compose up (staging)
+        shell: cmd
+        run: |
+          docker pull %IMAGE_NAME%:latest
+          cd /d "%DEPLOY_DIR%"
+          docker compose -f docker-compose.deploy.staging.yml pull
+          docker compose -f docker-compose.deploy.staging.yml up -d
+
+      - name: Show running services (staging)
+        shell: cmd
+        run: |
+          cd /d "%DEPLOY_DIR%"
+          docker compose -f docker-compose.deploy.staging.yml ps
+
+  deploy-prod:
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: self-hosted
+    steps:
+      - name: Docker login to GHCR (if secrets provided)
+        if: ${{ secrets.GHCR_PAT != '' }}
+        shell: cmd
+        run: |
+          echo %GHCR_PAT% | docker login ghcr.io -u %GHCR_USERNAME% --password-stdin
+        env:
+          GHCR_USERNAME: ${{ secrets.GHCR_USERNAME }}
+          GHCR_PAT: ${{ secrets.GHCR_PAT }}
+
+      - name: Pull tag and compose up (prod)
+        shell: cmd
+        run: |
+          set TAG=${{ github.ref_name }}
+          docker pull %IMAGE_NAME%:%TAG%
+          cd /d "%DEPLOY_DIR%"
+          docker compose -f docker-compose.deploy.yml pull
+          docker compose -f docker-compose.deploy.yml up -d
+
+      - name: Show running services (prod)
+        shell: cmd
+        run: |
+          cd /d "%DEPLOY_DIR%"
+          docker compose -f docker-compose.deploy.yml ps

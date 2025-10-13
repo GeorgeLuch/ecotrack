@@ -1,0 +1,32 @@
+services:
+  api:
+    image: ghcr.io/georgeluch/ecotrack:latest
+    ports:
+      - "5001:8080"
+    depends_on:
+      - sqlserver
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=sqlserver,1433;Database=EcoTrack_Staging;User Id=sa;Password=YourStrong!Passw0rd;Encrypt=False;TrustServerCertificate=True;"
+    networks:
+      - ecotrack-network
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver-staging
+    ports:
+      - "1434:1433"
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "YourStrong!Passw0rd"
+    volumes:
+      - pgdata_staging:/var/opt/mssql
+    networks:
+      - ecotrack-network
+
+volumes:
+  pgdata_staging: {}
+
+networks:
+  ecotrack-network:
+    driver: bridge

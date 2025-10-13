@@ -1,0 +1,32 @@
+# --- Build/Outputs (.NET) ---
+**/bin/
+**/obj/
+**/TestResults/
+*.trx
+*.log
+
+# --- IDE & ferramentas ---
+.vs/
+.vscode/
+.idea/
+*.iml
+*.user
+*.suo
+*.sln.ide
+
+# --- ASP.NET assets temporários ---
+**/staticwebassets.build.json
+**/staticwebassets.build.json.cache
+**/staticwebassets.endpoints.json
+**/staticwebassets.references.json
+**/rjsm*.dswa.cache.json
+**/rpswa.dswa.cache.json
+
+# --- Docker/Compose ---
+docker-compose.override.yml
+
+# --- SO / temporários ---
+Thumbs.db
+*.DS_Store
+*.swp
+*.tmp

@@ -2,7 +2,7 @@ name: ecotrack-prod
 services:
   api:
     container_name: ecotrack-api-prod
-    image: ghcr.io/georgeluch/ecotrack:${IMAGE_TAG:-latest}   # usa a tag do workflow; default = latest
+    image: ghcr.io/georgeluch/ecotrack:${IMAGE_TAG:-latest}
     ports: ["5000:8080"]
     environment:
       ASPNETCORE_ENVIRONMENT: Production

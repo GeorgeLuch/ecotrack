@@ -3,7 +3,7 @@ name: Docker Publish (GHCR)
 on:
   push:
     branches: [ "main" ]      # publica :latest a cada push na main
-    tags: [ "v*" ]            # publica também tag de versão (v1.0.0 etc.)
+    tags: [ "v*" ]            # publica também a tag (v1.0.0 etc.)
 
 env:
   IMAGE_NAME: ghcr.io/georgeluch/ecotrack
@@ -26,6 +26,7 @@ jobs:
 
       - name: Set tags
         id: vars
+        shell: bash
         run: |
           echo "latest_tag=${{ env.IMAGE_NAME }}:latest" >> $GITHUB_OUTPUT
           if [[ "${GITHUB_REF}" == refs/tags/* ]]; then
@@ -37,18 +38,20 @@ jobs:
       - name: Build & Push (latest)
         uses: docker/build-push-action@v6
         with:
-          context: .
+          context: ./EcoTrack.api/EcoTrack.api
+          file:    ./EcoTrack.api/EcoTrack.api/Dockerfile
           push: true
           tags: ${{ steps.vars.outputs.latest_tag }}
           cache-from: type=gha
-          cache-to: type=gha,mode=max
+          cache-to:   type=gha,mode=max
 
       - name: Build & Push (tag) if tag ref
         if: ${{ steps.vars.outputs.ref_tag != '' }}
         uses: docker/build-push-action@v6
         with:
-          context: .
+          context: ./EcoTrack.api/EcoTrack.api
+          file:    ./EcoTrack.api/EcoTrack.api/Dockerfile
           push: true
           tags: ${{ steps.vars.outputs.ref_tag }}
           cache-from: type=gha
-          cache-to: type=gha,mode=max
+          cache-to:   type=gha,mode=max

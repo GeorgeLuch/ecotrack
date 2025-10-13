@@ -1,0 +1,10 @@
+name: ecotrack-prod
+services:
+  api:
+    container_name: ecotrack-api-prod
+    image: ghcr.io/georgeluch/ecotrack:${IMAGE_TAG:-latest}   # usa a tag do workflow; default = latest
+    ports: ["5000:8080"]
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      ConnectionStrings__DefaultConnection: "Server=host.docker.internal,1433;Database=EcoTrack;User Id=sa;Password=YourStrong!Passw0rd;Encrypt=False;TrustServerCertificate=True;"
+    restart: unless-stopped

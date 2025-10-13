@@ -1,28 +1,41 @@
 services:
-  api:
-    build:
-      context: ./EcoTrack.api/EcoTrack.api   # <-- pasta onde estão Dockerfile + .csproj
-      dockerfile: Dockerfile
-    ports:
-      - "5000:8080"
-    depends_on:
-      - sqlserver
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - ConnectionStrings__DefaultConnection=Server=sqlserver,1433;Database=EcoTrack;User Id=sa;Password=YourStrong!Passw0rd;Encrypt=False;TrustServerCertificate=True;
-    networks:
-      - ecotrack-network
-
   sqlserver:
     image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: sqlserver
     ports:
       - "1433:1433"
     environment:
-      - ACCEPT_EULA=Y
-      - SA_PASSWORD=YourStrong!Passw0rd
-    networks:
-      - ecotrack-network
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "YourStrong!Passw0rd"
+    volumes:
+      - mssql_data:/var/opt/mssql
+    # Healthcheck sem 'sqlcmd': espera a mensagem de "pronto para conexões" no errorlog
+    healthcheck:
+      test: ["CMD-SHELL", "grep -q 'SQL Server is now ready for client connections' /var/opt/mssql/log/errorlog || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+      start_period: 60s
+    restart: unless-stopped
+    networks: [ecotrack-network]
+
+  api:
+    build:
+      context: ./EcoTrack.api/EcoTrack.api
+      dockerfile: Dockerfile
+    ports:
+      - "5002:8080"
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=sqlserver,1433;Database=EcoTrack;User Id=sa;Password=YourStrong!Passw0rd;Encrypt=False;TrustServerCertificate=True;"
+    restart: unless-stopped
+    networks: [ecotrack-network]
+
+volumes:
+  mssql_data: {}
 
 networks:
   ecotrack-network:

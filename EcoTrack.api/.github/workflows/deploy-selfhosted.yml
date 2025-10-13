@@ -1,9 +1,10 @@
-name: Deploy (self-hosted)
+name: Deploy (self-hosted → Staging/Prod)
 
 on:
   push:
-    branches: [ "main" ]        # staging automático
-  workflow_dispatch:             # produção manual (por enquanto)
+    branches: [ "main" ]      # staging automático
+    tags: [ "v*" ]            # produção por tag
+  workflow_dispatch:
 
 env:
   IMAGE_NAME: ghcr.io/georgeluch/ecotrack
@@ -11,19 +12,10 @@ env:
 
 jobs:
   staging:
-    if: ${{ github.ref_name == 'main' }}
+    if: ${{ github.ref_type == 'branch' && github.ref_name == 'main' }}
     runs-on: self-hosted
     steps:
-      - name: (Opcional) Login GHCR se secrets existirem
-        if: ${{ secrets.GHCR_PAT != '' }}
-        shell: cmd
-        run: |
-          echo %GHCR_PAT% | docker login ghcr.io -u %GHCR_USERNAME% --password-stdin
-        env:
-          GHCR_USERNAME: ${{ secrets.GHCR_USERNAME }}
-          GHCR_PAT: ${{ secrets.GHCR_PAT }}
-
-      - name: Pull/Up Staging (5001)
+      - name: Pull & Up Staging (5001)
         shell: cmd
         run: |
           cd /d "%DEPLOY_DIR%"
@@ -32,23 +24,17 @@ jobs:
           docker compose -f docker-compose.deploy.staging.yml up -d
           docker compose -f docker-compose.deploy.staging.yml ps
 
-  prod:
+    prod:
+    if: ${{ startsWith(github.ref, 'refs/tags/v') }}
     runs-on: self-hosted
     steps:
-      - name: (Opcional) Login GHCR se secrets existirem
-        if: ${{ secrets.GHCR_PAT != '' }}
+      - name: Pull & Up Production (5000)
         shell: cmd
-        run: |
-          echo %GHCR_PAT% | docker login ghcr.io -u %GHCR_USERNAME% --password-stdin
         env:
-          GHCR_USERNAME: ${{ secrets.GHCR_USERNAME }}
-          GHCR_PAT: ${{ secrets.GHCR_PAT }}
-
-      - name: Pull/Up Produção (5000)
-        shell: cmd
+          IMAGE_TAG: ${{ github.ref_name }}   # <- injeta v1.0.0 no ambiente do step
         run: |
           cd /d "%DEPLOY_DIR%"
-          docker pull %IMAGE_NAME%:latest
           docker compose -f docker-compose.deploy.yml pull
           docker compose -f docker-compose.deploy.yml up -d
           docker compose -f docker-compose.deploy.yml ps
+

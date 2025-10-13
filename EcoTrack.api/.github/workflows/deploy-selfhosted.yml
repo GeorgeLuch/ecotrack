@@ -1,23 +1,20 @@
-name: Deploy (self-hosted → GHCR image)
+name: Deploy (self-hosted)
 
 on:
   push:
-    branches: [ "main" ]          # staging
-  create:
-    tags:
-      - 'v*'                       # prod por tag (v1.0.0 etc.)
-  workflow_dispatch:
+    branches: [ "main" ]        # staging automático
+  workflow_dispatch:             # produção manual (por enquanto)
 
 env:
   IMAGE_NAME: ghcr.io/georgeluch/ecotrack
   DEPLOY_DIR: 'D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api'
 
 jobs:
-  deploy-staging:
-    if: github.ref == 'refs/heads/main'
+  staging:
+    if: ${{ github.ref_name == 'main' }}
     runs-on: self-hosted
     steps:
-      - name: Docker login to GHCR (if secrets provided)
+      - name: (Opcional) Login GHCR se secrets existirem
         if: ${{ secrets.GHCR_PAT != '' }}
         shell: cmd
         run: |
@@ -26,25 +23,19 @@ jobs:
           GHCR_USERNAME: ${{ secrets.GHCR_USERNAME }}
           GHCR_PAT: ${{ secrets.GHCR_PAT }}
 
-      - name: Pull latest image and compose up (staging)
+      - name: Pull/Up Staging (5001)
         shell: cmd
         run: |
-          docker pull %IMAGE_NAME%:latest
           cd /d "%DEPLOY_DIR%"
+          docker pull %IMAGE_NAME%:latest
           docker compose -f docker-compose.deploy.staging.yml pull
           docker compose -f docker-compose.deploy.staging.yml up -d
-
-      - name: Show running services (staging)
-        shell: cmd
-        run: |
-          cd /d "%DEPLOY_DIR%"
           docker compose -f docker-compose.deploy.staging.yml ps
 
-  deploy-prod:
-    if: startsWith(github.ref, 'refs/tags/v')
+  prod:
     runs-on: self-hosted
     steps:
-      - name: Docker login to GHCR (if secrets provided)
+      - name: (Opcional) Login GHCR se secrets existirem
         if: ${{ secrets.GHCR_PAT != '' }}
         shell: cmd
         run: |
@@ -53,17 +44,11 @@ jobs:
           GHCR_USERNAME: ${{ secrets.GHCR_USERNAME }}
           GHCR_PAT: ${{ secrets.GHCR_PAT }}
 
-      - name: Pull tag and compose up (prod)
+      - name: Pull/Up Produção (5000)
         shell: cmd
         run: |
-          set TAG=${{ github.ref_name }}
-          docker pull %IMAGE_NAME%:%TAG%
           cd /d "%DEPLOY_DIR%"
+          docker pull %IMAGE_NAME%:latest
           docker compose -f docker-compose.deploy.yml pull
           docker compose -f docker-compose.deploy.yml up -d
-
-      - name: Show running services (prod)
-        shell: cmd
-        run: |
-          cd /d "%DEPLOY_DIR%"
           docker compose -f docker-compose.deploy.yml ps

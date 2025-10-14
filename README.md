@@ -173,6 +173,7 @@ docs/
 ├─ print_08_prod_image.png           # docker inspect mostrando imagem/tag em prod
 ├─ print_09_sql_health.png           # docker compose ps com SQL "healthy"
 └─ print_10_runner.png               # janela do runner self-hosted (Listening for Jobs)
+└─ Dockerfile.png                    # Evidencia dorckerfile.
 ```
 
 **Placeholders prontos no README (exibição):**

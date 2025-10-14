@@ -17,11 +17,11 @@
 
 EcoTrack API
 
-Arthur Batista Fim - RM558681 
-Caio de Souza Machado – RM556746 
-George Luchtenberg Fortunato - RM556569 
-João Pedro Curcino Zanni – RM557591 
-Victor Gomes Ramos – RM558366
+Arthur Batista Fim - RM558681 \\
+Caio de Souza Machado – RM556746 \\
+George Luchtenberg Fortunato - RM556569 \\
+João Pedro Curcino Zanni – RM557591 \\
+Victor Gomes Ramos – RM558366 \\
 
 
 ---

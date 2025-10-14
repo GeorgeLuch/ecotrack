@@ -1,21 +1,55 @@
-name: Deploy self-hosted (single job)
+name: Deploy self-hosted (Staging & Prod)
 
 on:
   push:
-    branches: ["main"]
-    tags: ["v*"]
+    branches: ["main"]   # staging
+    tags: ["v*"]         # produção por tag vX.Y.Z
   workflow_dispatch:
+
+env:
+  IMAGE_NAME: ghcr.io/georgeluch/ecotrack
+  DEPLOY_DIR: 'D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api'
+  STG_COMPOSE: 'D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\docker-compose.deploy.staging.yml'
+  PRD_COMPOSE: 'D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\docker-compose.deploy.yml'
 
 jobs:
   deploy:
     runs-on: self-hosted
     steps:
-      - name: Sanity staging
+      - name: Preflight (Docker/Compose)
+        shell: cmd
+        run: |
+          docker version || exit /b 1
+          docker compose version || exit /b 1
+
+      # (Opcional) login no GHCR se a imagem for privada e você definir os secrets
+      - name: Login GHCR (secrets)
+        if: ${{ secrets.GHCR_PAT != '' }}
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ secrets.GHCR_USERNAME }}
+          password: ${{ secrets.GHCR_PAT }}
+
+      - name: Deploy STAGING (main)
         if: github.ref == 'refs/heads/main'
         shell: cmd
-        run: echo STAGING OK
+        run: |
+          if not exist "%STG_COMPOSE%" ( echo ERRO: %STG_COMPOSE% nao encontrado & dir /b "%DEPLOY_DIR%" & exit /b 1 )
+          docker pull %IMAGE_NAME%:latest || exit /b 1
+          docker compose -f "%STG_COMPOSE%" up -d --pull always
+          docker compose -f "%STG_COMPOSE%" ps
 
-      - name: Sanity prod
+      - name: Set IMAGE_TAG (from git tag)
         if: startsWith(github.ref, 'refs/tags/v')
         shell: cmd
-        run: echo PROD OK
+        run: echo IMAGE_TAG=%GITHUB_REF_NAME%>> %GITHUB_ENV%
+
+      - name: Deploy PROD (tag v*)
+        if: startsWith(github.ref, 'refs/tags/v')
+        shell: cmd
+        run: |
+          if not exist "%PRD_COMPOSE%" ( echo ERRO: %PRD_COMPOSE% nao encontrado & dir /b "%DEPLOY_DIR%" & exit /b 1 )
+          docker pull %IMAGE_NAME%:%IMAGE_TAG% || exit /b 1
+          docker compose -f "%PRD_COMPOSE%" up -d --pull always
+          docker compose -f "%PRD_COMPOSE%" ps

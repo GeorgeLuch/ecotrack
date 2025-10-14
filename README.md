@@ -190,6 +190,7 @@ docs/
 ![Imagem/Tag Produção](EcoTrack.api/docs/print_08_prod_image.png)
 ![SQL Healthy](EcoTrack.api/docs/print_09_sql_health.png)
 ![Runner Ativo](EcoTrack.api/docs/print_10_runner.png)
+![Dockefile_evidencia](docs/Dockerfile.png)
 
 
 ---

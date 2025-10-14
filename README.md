@@ -174,6 +174,8 @@ docs/
 
 **Placeholders prontos no README (exibição):**
 ![CI (.NET) OK](docs/print_01_ci_ok.png)
+
+![CI (.NET) OK](docs/print_01_ci_ok.png)
 docs/print_01_ci_ok.png
 ![Publish GHCR OK](docs/print_02_publish_ok.png)
 ![Deploy Staging OK](docs/print_03_deploy_staging_ok.png)

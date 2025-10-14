@@ -173,21 +173,6 @@ docs/
 ```
 
 **Placeholders prontos no README (exibição):**
-![CI (.NET) OK](docs/print_01_ci_ok.png)
-https://github.com/GeorgeLuch/ecotrack/blob/main/EcoTrack.api/docs/print_01_ci_ok.png
-![Publish GHCR OK](docs/print_02_publish_ok.png)
-![Deploy Staging OK](docs/print_03_deploy_staging_ok.png)
-![Deploy Produção OK](docs/print_04_deploy_prod_ok.png)
-
-![Swagger Prod](docs/print_05_swagger_prod.png)
-![Swagger Staging](docs/print_06_swagger_staging.png)
-![Swagger Dev](docs/print_07_swagger_dev.png)
-
-![Imagem/Tag Produção](docs/print_08_prod_image.png)
-![SQL Healthy](docs/print_09_sql_health.png)
-![Runner Ativo](docs/print_10_runner.png)
-
-**Placeholders prontos no README (exibição):**
 
 ![CI (.NET) OK](EcoTrack.api/docs/print_01_ci_ok.png)
 

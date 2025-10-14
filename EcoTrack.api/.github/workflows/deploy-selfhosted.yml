@@ -1,4 +1,4 @@
-name: Deploy self-hosted (Staging & Prod)
+name: Deploy self-hosted (single job)
 
 on:
   push:
@@ -7,18 +7,15 @@ on:
   workflow_dispatch:
 
 jobs:
-  staging:
-    if: github.ref == 'refs/heads/main'
+  deploy:
     runs-on: self-hosted
     steps:
-      - name: Sanity
+      - name: Sanity staging
+        if: github.ref == 'refs/heads/main'
         shell: cmd
         run: echo STAGING OK
 
-  prod:
-    if: startsWith(github.ref, 'refs/tags/v')
-    runs-on: self-hosted
-    steps:
-      - name: Sanity
+      - name: Sanity prod
+        if: startsWith(github.ref, 'refs/tags/v')
         shell: cmd
         run: echo PROD OK

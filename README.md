@@ -7,6 +7,12 @@
 [![CI (.NET)](https://github.com/GeorgeLuch/ecotrack/actions/workflows/ci-dotnet.yml/badge.svg?branch=main)](https://github.com/GeorgeLuch/ecotrack/actions/workflows/ci-dotnet.yml)
 [![Docker Publish (GHCR)](https://github.com/GeorgeLuch/ecotrack/actions/workflows/docker-publish.yml/badge.svg?branch=main)](https://github.com/GeorgeLuch/ecotrack/actions/workflows/docker-publish.yml)
 [![Deploy (self-hosted)](https://github.com/GeorgeLuch/ecotrack/actions/workflows/deploy-selfhosted.yml/badge.svg?branch=main)](https://github.com/GeorgeLuch/ecotrack/actions/workflows/deploy-selfhosted.yml)
+[![CI (.NET)](https://github.com/GeorgeLuch/ecotrack/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/GeorgeLuch/ecotrack/actions/workflows/ci.yml)
+
+[![Docker Publish (GHCR)](https://github.com/GeorgeLuch/ecotrack/actions/workflows/docker-publish.yml/badge.svg?branch=main)](https://github.com/GeorgeLuch/ecotrack/actions/workflows/docker-publish.yml)
+
+[![Deploy (self-hosted)](https://github.com/GeorgeLuch/ecotrack/actions/workflows/deploy-selfhosted.yml/badge.svg?branch=main)](https://github.com/GeorgeLuch/ecotrack/actions/workflows/deploy-selfhosted.yml)
+
 
 ---
 

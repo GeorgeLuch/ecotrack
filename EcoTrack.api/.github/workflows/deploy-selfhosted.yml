@@ -2,40 +2,65 @@ name: Deploy (self-hosted → Staging/Prod)
 
 on:
   push:
-    branches: [ "main" ]      # staging automático
-    tags: [ "v*" ]            # produção por tag vX.Y.Z
+    branches: ["main"]     # staging automático
+    tags:     ["v*"]       # produção por tag vX.Y.Z
   workflow_dispatch:
 
 env:
   IMAGE_NAME: ghcr.io/georgeluch/ecotrack
   DEPLOY_DIR: 'D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api'
+  STG_COMPOSE: 'D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\docker-compose.deploy.staging.yml'
+  PRD_COMPOSE: 'D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api\docker-compose.deploy.yml'
 
 jobs:
   staging:
     if: github.ref == 'refs/heads/main'
     runs-on: self-hosted
     steps:
-      - name: Pull & Up Staging (5001)
+      - name: Preflight (Docker/Compose/arquivo)
         shell: cmd
         run: |
-          cd /d "%DEPLOY_DIR%"
-          docker pull %IMAGE_NAME%:latest
-          docker compose -f docker-compose.deploy.staging.yml up -d
-          docker compose -f docker-compose.deploy.staging.yml ps
+          echo ==== DOCKER VERSION ====
+          docker version || exit /b 1
+          echo ==== DOCKER INFO (server deve aparecer) ====
+          docker info    || exit /b 1
+          echo ==== COMPOSE PLUGIN ====
+          docker compose version || exit /b 1
+          echo ==== ARQUIVO COMPOSE (staging) ====
+          if not exist "%STG_COMPOSE%" ( echo ERRO: Nao achei "%STG_COMPOSE%" & dir /b "D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api" & exit /b 1 )
+          docker compose -f "%STG_COMPOSE%" config || exit /b 1
+
+      - name: Deploy Staging (5001)
+        shell: cmd
+        run: |
+          docker pull %IMAGE_NAME%:latest  || exit /b 1
+          docker compose -f "%STG_COMPOSE%" up -d --pull always || exit /b 1
+          docker compose -f "%STG_COMPOSE%" ps
 
   prod:
     if: startsWith(github.ref, 'refs/tags/v')
     runs-on: self-hosted
     steps:
-      - name: Definir IMAGE_TAG (usa a tag do git, ex.: v1.0.3)
+      - name: Preflight (Docker/Compose/arquivo)
         shell: cmd
         run: |
-          echo IMAGE_TAG=%GITHUB_REF_NAME%>> %GITHUB_ENV%
+          echo ==== DOCKER VERSION ====
+          docker version || exit /b 1
+          echo ==== DOCKER INFO ====
+          docker info    || exit /b 1
+          echo ==== COMPOSE PLUGIN ====
+          docker compose version || exit /b 1
+          echo ==== ARQUIVO COMPOSE (prod) ====
+          if not exist "%PRD_COMPOSE%" ( echo ERRO: Nao achei "%PRD_COMPOSE%" & dir /b "D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api" & exit /b 1 )
+          docker compose -f "%PRD_COMPOSE%" config || exit /b 1
 
-      - name: Pull & Up Production (5000)
+      - name: Definir IMAGE_TAG a partir da tag
+        shell: cmd
+        run: echo IMAGE_TAG=%GITHUB_REF_NAME%>> %GITHUB_ENV%
+
+      - name: Deploy Prod (5000)
         shell: cmd
         run: |
-          cd /d "%DEPLOY_DIR%"
-          docker pull %IMAGE_NAME%:%IMAGE_TAG%
-          docker compose -f docker-compose.deploy.yml up -d
-          docker compose -f docker-compose.deploy.yml ps
+          docker pull %IMAGE_NAME%:%IMAGE_TAG%  || exit /b 1
+          docker compose -f "%PRD_COMPOSE%" up -d --pull always || exit /b 1
+          docker compose -f "%PRD_COMPOSE%" ps

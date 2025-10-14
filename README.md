@@ -10,11 +10,16 @@
 
 ---
 
-## 0) Equipe e título
+## Equipe e título
 
-**Projeto:** EcoTrack API — Pipeline CI/CD, Containerização e Orquestração  
-**Integrantes:** _preencha com os nomes_  
-**Professor/Disciplina:** _preencha_
+EcoTrack API
+
+Arthur Batista Fim - RM558681 
+Caio de Souza Machado – RM556746 
+George Luchtenberg Fortunato - RM556569 
+João Pedro Curcino Zanni – RM557591 
+Victor Gomes Ramos – RM558366
+
 
 ---
 

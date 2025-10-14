@@ -18,7 +18,7 @@
 
 ---
 
-## ✅ Pré-requisitos
+##  Pré-requisitos
 
 - **Docker Desktop** (Windows com WSL2) ou Docker Engine.
 - Portas livres no host: **5000**, **5001**, **5002** (API) e **1433** (SQL Server).
@@ -27,7 +27,7 @@
 
 ---
 
-## 🚀 Como executar localmente com Docker
+## Como executar localmente com Docker
 
 > Execute os comandos **na raiz do repositório**.
 
@@ -64,7 +64,7 @@ docker rm -f ecotrack-api-dev
 
 ---
 
-## 🔁 Pipeline CI/CD (GitHub Actions)
+## Pipeline CI/CD (GitHub Actions)
 
 **Workflows:**
 - **CI (.NET)** — `/.github/workflows/ci-dotnet.yml`  
@@ -90,7 +90,7 @@ git push origin v1.0.1
 
 ---
 
-## 🐳 Containerização
+## Containerização
 
 **Imagem pública:** `ghcr.io/georgeluch/ecotrack`  
 A aplicação escuta **8080** dentro do container (mapeada para 5000/5001/5002 no host).
@@ -118,7 +118,7 @@ ENTRYPOINT ["dotnet", "EcoTrack.api.dll"]
 
 ---
 
-## 🧩 Orquestração (Docker Compose)
+## Orquestração (Docker Compose)
 
 Arquivos na raiz do repo:
 - `docker-compose.yml` — **Dev** (API 5002 + SQL 1433)  
@@ -151,11 +151,7 @@ docker compose -f docker-compose.deploy.yml ps
 
 ---
 
-## 🖼️ Prints do funcionamento
-
-> **Onde colocar as prints?**  
-> Crie a pasta **`docs/`** na **raiz do repositório** e salve as imagens com os nomes abaixo.  
-> Os links já estão prontos — basta colar as imagens e commitar.
+## Prints do funcionamento
 
 ```
 docs/
@@ -187,7 +183,7 @@ docs/
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - **.NET 8** (ASP.NET Core Web API, EF Core)  
 - **SQL Server** (mcr.microsoft.com/mssql/server:2022-latest)  
@@ -197,7 +193,7 @@ docs/
 
 ---
 
-## 🔎 Validações rápidas (comandos úteis)
+## Validações rápidas (comandos úteis)
 
 ```bash
 # Containers e portas
@@ -217,7 +213,7 @@ docker inspect -f "{{.Config.Image}} @ {{.Image}}" ecotrack-api-prod
 
 ---
 
-## 👥 Autores (exemplo)
+## Autores (exemplo)
 
 - **Seu Nome** (@seuuser) — CI/CD e Docker  
 - **Colega 1** — Orquestração / Banco  
@@ -227,7 +223,7 @@ docker inspect -f "{{.Config.Image}} @ {{.Image}}" ecotrack-api-prod
 
 ---
 
-## 📁 Estrutura (resumo)
+## Estrutura (resumo)
 
 ```
 EcoTrack.api/
@@ -246,7 +242,7 @@ EcoTrack.api/
 
 ---
 
-## 🧯 Troubleshooting
+## Troubleshooting
 
 - **404 no Swagger** → confirme `UseSwagger()`/`UseSwaggerUI()` e `ASPNETCORE_URLS=http://+:8080`.  
 - **Porta em uso (5000/5001/5002)** → `docker ps`, pare o serviço conflitante ou remapeie.  
@@ -256,5 +252,5 @@ EcoTrack.api/
 
 ---
 
-## 📝 Licença
+## Licença
 Uso acadêmico/educacional.

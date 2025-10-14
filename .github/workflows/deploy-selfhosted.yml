@@ -1,41 +1,21 @@
-name: Deploy (self-hosted → Staging/Prod)
+name: Deploy self-hosted (single job)
 
 on:
   push:
-    branches: [ "main" ]      # staging automático
-    tags: [ "v*" ]            # produção por tag
+    branches: ["main"]
+    tags: ["v*"]
   workflow_dispatch:
 
-env:
-  IMAGE_NAME: ghcr.io/georgeluch/ecotrack
-  DEPLOY_DIR: 'D:\Eco para CI CD\EcoTrack.api (2)\EcoTrack.api'
-
 jobs:
-  staging:
-    if: ${{ github.ref_type == 'branch' && github.ref_name == 'main' }}
+  deploy:
     runs-on: self-hosted
     steps:
-      - name: Pull & Up Staging (5001)
+      - name: Sanity staging
+        if: github.ref == 'refs/heads/main'
         shell: cmd
-        run: |
-          cd /d "%DEPLOY_DIR%"
-          docker pull %IMAGE_NAME%:latest
-          docker compose -f docker-compose.deploy.staging.yml pull
-          docker compose -f docker-compose.deploy.staging.yml up -d
-          docker compose -f docker-compose.deploy.staging.yml ps
+        run: echo STAGING OK
 
-    prod:
-    if: ${{ startsWith(github.ref, 'refs/tags/v') }}
-    runs-on: self-hosted
-    steps:
-      - name: Pull & Up Production (5000)
+      - name: Sanity prod
+        if: startsWith(github.ref, 'refs/tags/v')
         shell: cmd
-        env:
-          IMAGE_TAG: ${{ github.ref_name }}   # ex.: v1.0.2
-        run: |
-          cd /d "%DEPLOY_DIR%"
-          docker compose -f docker-compose.deploy.yml pull
-          docker compose -f docker-compose.deploy.yml up -d
-          docker compose -f docker-compose.deploy.yml ps
-
-
+        run: echo PROD OK

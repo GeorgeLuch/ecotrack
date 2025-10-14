@@ -31,10 +31,11 @@ jobs:
       - name: Pull & Up Production (5000)
         shell: cmd
         env:
-          IMAGE_TAG: ${{ github.ref_name }}   # <- injeta v1.0.0 no ambiente do step
+          IMAGE_TAG: ${{ github.ref_name }}   # ex.: v1.0.2
         run: |
           cd /d "%DEPLOY_DIR%"
           docker compose -f docker-compose.deploy.yml pull
           docker compose -f docker-compose.deploy.yml up -d
           docker compose -f docker-compose.deploy.yml ps
+
 
